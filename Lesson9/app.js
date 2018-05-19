@@ -112,7 +112,7 @@ function update(){
 		player.body.velocity.y = -300;
 	}
 
-	game.phsics.arcade.overlap(player, stars, collectStar);
+	game.physics.arcade.overlap(player, stars, collectStar);
 	game.physics.arcade.overlap(player, enemy1, loseLife);
 	moveEnemy();
 	if(life == 0){
